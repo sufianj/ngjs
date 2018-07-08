@@ -1,0 +1,8 @@
+<app-emulation-button label="Emulation" (evtClick)="fctEvtClick($event)"></app-emulation-button>
+
+<button type="button" class='btn btn-default' (click)="sendEcho()">Echo</button>
+<input type="text" [(ngModel)]="zoneInputText">
+
+<div infoPourLeComponentHost="toto">
+    div de test --{{infoDeLaDirective}}--
+</div>

@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    Welcome to {{ title }}! 
+</div>
+<!-- menu via <a/> -->
+<a href="" routerLink="/">vers page un (default)</a><br/>
+<a href="" routerLink="/un">vers page un (default)</a><br/>
+<a href="" routerLink="/deux">vers page deux</a><br/>
+<a href="" routerLink="/trois">vers page trois</a><br/>
+<hr/>
+
+<button type="button" (click)="toRoute('')">Page 1</button>
+<button type="button" (click)="toRoute('un')">Page 1</button>
+<button type="button" (click)="toRoute('deux')">Page 2</button>
+<button type="button" (click)="toRoute('trois')">Page 3</button>
+
+<router-outlet></router-outlet>

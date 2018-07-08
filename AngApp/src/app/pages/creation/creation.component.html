@@ -1,0 +1,5 @@
+<form (ngSubmit)="processSubmit()" [formGroup]="dataForm">
+  <input type="text" class="form-control" formControlName="nom"/>
+  <input type="text" class="form-control" formControlName="prenom"/>
+  <button class="btn" type="submit" [disabled]="dataForm.invalid"></button>
+</form>

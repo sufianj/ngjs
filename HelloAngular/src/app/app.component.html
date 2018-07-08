@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <!--Autre composant-->
+  <app-autre-composant #cmp1></app-autre-composant>
+  <app-autre-composant #cmp2></app-autre-composant>
+
+<div *ngIf="leFlag; else isVisible">heure: {{heure}}</div>
+<ng-template #isVisible>Pas d'heure</ng-template>
+<div>flag: {{leFlag}}</div>
+<button type="button" (click)="onClickBt()" class="btn btn-default">Clic</button>
+<div>Prix: {{prix | currency: 'EUR' | formatCurrency}}</div>
+<div>Prix: {{prix2 | currency: 'EUR'}}</div>
+
+<hr/>
+<ul>
+  <li *ngFor="let str of leTableau"> {{str}}</li>
+</ul>
+</div>
+
